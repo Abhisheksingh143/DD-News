@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
 import React, { Component } from "react";
@@ -19,7 +19,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <BrowserRouter>
+        <HashRouter>
           <Navbar />
           <LoadingBar
             height={5}
@@ -29,7 +29,7 @@ export default class App extends Component {
           />
           <Routes>
             <Route
-              path="/dd-news"
+              path="/"
               element={
                 <News
                   pageSize={10}
@@ -41,7 +41,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/business"
+              path="/business"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -54,7 +54,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/entertainment"
+              path="/entertainment"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -67,7 +67,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/health"
+              path="/health"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -80,7 +80,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/science"
+              path="/science"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -93,7 +93,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/technology"
+              path="/technology"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -106,7 +106,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="/dd-news/sports"
+              path="/sports"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -119,7 +119,7 @@ export default class App extends Component {
               }
             />
           </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }

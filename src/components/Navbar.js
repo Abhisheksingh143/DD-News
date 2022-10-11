@@ -33,33 +33,33 @@ export default class Navbar extends Component {
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/business">
+                  <Link className="nav-link" to="/business">
                     Business
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/entertainment">
+                  <Link className="nav-link" to="/entertainment">
                     Entertainment
                   </Link>
                 </li>
 
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/health">
+                  <Link className="nav-link" to="/health">
                     Health
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/science">
+                  <Link className="nav-link" to="/science">
                     Science
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/technology">
+                  <Link className="nav-link" to="/technology">
                     Technology
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to="/dd-news/sports">
+                  <Link className="nav-link" to="/sports">
                     Sports
                   </Link>
                 </li>
