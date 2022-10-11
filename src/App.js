@@ -29,7 +29,7 @@ export default class App extends Component {
           />
           <Routes>
             <Route
-              index
+              path="/dd-news"
               element={
                 <News
                   pageSize={10}
@@ -41,7 +41,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="business"
+              path="/dd-news/business"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -54,7 +54,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="entertainment"
+              path="/dd-news/entertainment"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -67,7 +67,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="health"
+              path="/dd-news/health"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -80,7 +80,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="science"
+              path="/dd-news/science"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -93,7 +93,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="technology"
+              path="/dd-news/technology"
               element={
                 <News
                   setProgress={this.setProgress}
@@ -106,7 +106,7 @@ export default class App extends Component {
               }
             />
             <Route
-              path="sports"
+              path="/dd-news/sports"
               element={
                 <News
                   setProgress={this.setProgress}
